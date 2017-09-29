@@ -1,7 +1,7 @@
-#Personalización del Carousel y banner Parallax 
+# Personalización del Carousel y banner Parallax 
 ===============================================
 
-##Estilos en añdido en el Carosel.
+## Estilos en añdido en el Carosel.
 ----------------------------------
 1. *Overlay.*
 2. *Color los Indicdore.*
