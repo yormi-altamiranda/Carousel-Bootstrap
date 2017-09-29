@@ -1,6 +1,5 @@
 # Personalización del Carousel y banner Parallax 
-===============================================
-
+------------------------------------------------
 ## Estilos en añdido en el Carosel.
 ----------------------------------
 1. *Overlay.*
@@ -10,7 +9,6 @@
 
 ## Banner Parallax
 ------------------
-
 1. *Color RGBA al Titulo*
 2. *Sombra al Parrafo* 
 
