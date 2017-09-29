@@ -1,0 +1,26 @@
+{
+  "name": "custom-carousel-banner",
+  "description": "Personalización del Carousel y banner Parallax",
+  "main": "gulpfile.js",
+  "authors": [
+    "@yormialtamiranda"
+  ],
+  "license": "GPL-3.0",
+  "keywords": [
+    "Carousel",
+    "Banner",
+    "Parallax"
+  ],
+  "homepage": "https://github.com/yormi-altamiranda/custom-carousel-banner",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap-sass": "^3.3.7"
+  }
+}

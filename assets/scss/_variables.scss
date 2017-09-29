@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:300|Roboto:900|Source+Sans+Pro:300,400,600');
+@import url('https://fonts.googleapis.com/css?family=Kaushan+Script');
+// Fonts
+$font__lato: 'Lato',sans-serif;
+$font__SSP: 'Source Sans Pro',sans-serif;
+$font__Roboto: 'Roboto', sans-serif;
+$font__Kaushan: 'Kaushan Script', cursive;
+// Colores
+$primary:#87AF52;
+$gray: #797F80;
+$black:#262626;
+$white:#fff;
+$gray:#F5F5F5;
+$gray_2:#9D9D9D;
+$color_overlay:rgb(3,13,29);
+// Colores RGBA
+$primary_o: rgba(135,175,82,.6);
+$white_opa:rgba(255,255,255,.6);
+$white_o-2:rgba(255,255,255,.3);
+$balck_opa:rgba(0,0,0 ,.3);
+$trasnparente:transparent;

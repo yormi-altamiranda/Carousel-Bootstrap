@@ -1,0 +1,371 @@
+@import 'variables';
+
+html,body{
+	height: 100%;
+	font-size: 16px;
+}
+
+// Tituos & Parrafos
+
+.title{
+	font-family: $font__SSP;
+	font-size: 4rem;
+	font-weight: 300;
+	margin-top: 4rem;
+	margin-bottom: 2rem;
+}
+.paragramph{
+	font-family: $font__SSP;
+	font-size: 1.4rem;
+	font-weight: 300;
+	margin-top: 2rem;
+	margin-bottom: 1.6rem;
+}
+
+// Carosel
+/*-----------------------------------------------------------
+					Reglas para Carrucel 
+-------------------------------------------------------------*/
+/* You can change the height of the carousel by changing 
+ the height in the class below. It is set to 50% 
+ by default, but can be any height! */
+
+/* Puede cambiar la altura del carrusel cambiando
+  La altura en la clase de abajo. Se establece en el 50%
+  Por defecto, pero puede ser cualquier altura! */
+.carousel {
+    height: 80%;
+}
+.item,
+.active,
+.carousel-inner {
+    height: 100%;
+}
+/* Background images are set within the HTML using inline CSS, not here */
+/* Las imágenes de fondo se establecen dentro del HTML usando CSS en línea, no aquí */
+.fill {
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+/*Color de los indicadores*/
+
+.fade-carousel .carousel-indicators > li {
+	width: 14px;
+  	height: 14px;
+    margin: 0 2px;
+    background-color: $primary;
+    border-color: $primary;
+    opacity: .7;
+}
+.fade-carousel .carousel-indicators > li.active {
+  	width: 16px;
+  	height: 16px;
+  	opacity: 1;
+}
+
+.hero {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    z-index:3;
+    text-align: center;
+    text-transform: uppercase;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+      -webkit-transform: translate3d(-50%,-50%,0);
+         -moz-transform: translate3d(-50%,-50%,0);
+          -ms-transform: translate3d(-50%,-50%,0);
+           -o-transform: translate3d(-50%,-50%,0);
+              transform: translate3d(-50%,-50%,0);
+          h3 {
+          	color: $primary_o;
+          	font-family: $font__Roboto;
+              font-size: 5rem;    
+              font-weight: 900;
+              margin: 0;
+              padding: 0;
+              text-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+
+          }
+}
+.fade-carousel .carousel-inner .item .hero {
+    opacity: 0;
+    -webkit-transition: 2s all ease-in-out .1s;
+       -moz-transition: 2s all ease-in-out .1s; 
+        -ms-transition: 2s all ease-in-out .1s; 
+         -o-transition: 2s all ease-in-out .1s; 
+            transition: 2s all ease-in-out .1s; 
+}
+.fade-carousel .carousel-inner .item.active .hero {
+    opacity: 1;
+    -webkit-transition: 2s all ease-in-out .1s;
+       -moz-transition: 2s all ease-in-out .1s; 
+        -ms-transition: 2s all ease-in-out .1s; 
+         -o-transition: 2s all ease-in-out .1s; 
+ }
+ /********************************/
+/*            Overlay           */
+/********************************/
+.overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background-color: $color_overlay;
+    opacity: .5;
+}
+.separator {
+    width: 100px;
+    height: 3px;
+    background-color: $primary;
+    margin: 20px auto;
+    border: 0;
+}
+.footer{
+	background-color: $gray;
+	padding:20px 0;
+	p{
+		color: $gray_2;
+		margin: 0;
+		font-family: $font__SSP;
+		font-size: 1rem;
+		font-weight: 400;
+	}
+	a{
+		font-weight: 600;
+    color:$white;
+    text-transform: uppercase;
+    margin-left: 5px;
+    background-color:$primary;
+    padding:5px 20px;
+    border-radius:6px;
+    &:hover{
+      background-color:$white;
+      color:$primary;
+      transition:background-color .2s;
+    }
+	}
+}
+
+// Media Query
+@media screen and (min-width: 980px){
+    .hero{
+        width: 100%;
+    }
+}
+@media screen and (min-width: 768px){
+  // NAVBAR
+  .navbar-default {
+      background-color: $trasnparente;
+      padding-top:15px;
+    padding-bottom: 15px;
+      border:0;
+        transition: background-color .2s ease;
+
+      .navbar-brand {
+            padding: 0px;
+            line-height: normal;
+            height: 100%;
+
+                img{
+                height: 100%;
+                width: 100px;
+                }
+            }
+      .nav.navbar-nav {
+          line-height: 20px;
+
+          .active>a,
+          .navbar-default .navbar-nav>.active>a:focus,
+          .navbar-default .navbar-nav>.active>a:hover {
+              border-radius: 6px;
+              background-color: $primary_o;
+              color: $white;
+              transition: background .2s;
+          }
+          a {
+              font-family: $font__SSP;
+              font-size: .9rem;
+              color: $white;
+              font-weight: 600;
+              text-transform: uppercase;
+              margin: 0 3px;
+              transition: background .2s;
+              &:hover {
+                  border-radius: 6px;
+                  background-color: $primary;
+                  color: $white;
+                  transition: background .2s;
+              }
+          }
+      }
+  }
+
+  .bg-navbar {
+      background-color: $primary;
+         transition: background-color .2s ease;
+
+         .navbar-brand {
+            color: $white;
+            transition: background .2s;
+        }
+    
+      .nav.navbar-nav {
+          .active>a,
+          .navbar-default .navbar-nav>.active>a:focus,
+          .navbar-default .navbar-nav>.active>a:hover {
+              border-radius: 6px;
+              background-color: $balck_opa;
+              color: $white;
+              transition: background .2s;
+          }
+
+          a {
+              color: $white;
+              &:hover {
+                  color: $white;
+                    background-color: $balck_opa;
+                  transition: background .2s;
+              }
+          }
+      }
+  }
+}
+@media only screen and (max-width: 768px){
+    // Carousel
+    .hero{
+        width: 100%;
+        h3 {
+            font-size: 3rem; 
+        }
+        p {
+            font-size: .9rem;
+        }
+    }
+    // NAVBAR
+    .navbar-default {
+      background-color: $primary;
+    padding-top:15px;
+    padding-bottom: 15px;
+      // height: 80px;
+      border:0;
+        .navbar-brand {
+            padding: 0px;
+            line-height: normal;
+            height: 100%;
+
+                img{
+                height: 100%;
+                width: 100px;
+                 // background-image: url("../img/logo-2.png") !important;
+                // background-image: url(../img/logo-2.png) !important;
+                }
+            }
+      .nav.navbar-nav {
+        .active>a,
+        .navbar-default .navbar-nav>.active>a:focus,
+        .navbar-default .navbar-nav>.active>a:hover {
+            border-radius: 6px;
+            background-color: $white_opa;
+            color: $white;
+            transition: background .2s;
+        }
+
+        a {
+            color: $white;
+            font-family: $font__SSP;
+            font-weight: 600;
+            text-transform: uppercase;
+            margin: 0 5px;
+            text-align: center;
+            &:hover {
+                border-radius: 6px;
+                background-color: $white_opa;
+                color: $white;
+                transition: background .2s;
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width: 425px){
+    .navbar-brand {
+        padding: 5px;
+        line-height: normal;
+        height: 100%;
+
+            img{
+            width: 100%;
+            height: 100%;
+            margin-left:20px;
+            }
+    }
+
+    .carousel {
+        height: 60%;
+    }
+    .item,
+    .active,
+    .carousel-inner {
+        height: 100%;
+    }
+    .hero{
+        width: 425px;
+        h3 {
+            font-size: 1.4rem; 
+        }
+        p {
+            font-size: .6rem;
+        }
+    }
+
+    // Tutulos
+  .title {
+      font-size: 2rem;
+  }
+
+  .sub-title {
+      font-size: 1.5rem;
+
+  }
+
+  .title-900{
+    font-family: $font__Roboto;
+      font-size: 3rem;
+      font-weight: 900;
+      margin-top: 3rem;
+      margin-bottom: 2.5rem;
+      text-transform: uppercase;
+  }
+  .paragramph {
+      font-size: 1.2rem;
+  }
+  // Parrallax
+  .text-vcenter {
+
+        h2 {
+          font-size: 2.5rem;
+
+      }
+        p {
+          font-size: 1.1rem;
+      }
+  }
+  // Footer
+  .footer {
+      p {
+          font-size: .8rem
+      }
+      a {
+          font-weight: 700;
+          text-transform: uppercase;
+          margin-left: 5px;
+      }
+  }
+}
+}

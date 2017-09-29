@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+html(lang="es")
+head
+	meta(charset="UTF-8")
+	meta(http-equiv="X-UA-Compatible" content="IE=edge")
+	meta(name="viewport" content="width=device-width, initial-scale=1")
+	title Personalización del Carousel y banner Parallax 
+	link(rel="stylesheet", href="css/styles.min.css")
+	link(rel="stylesheet", href="css/custom.min.css")
+body
+
+	// Menu
+	nav#menu.navbar.navbar-default.navbar-fixed-top
+		.container
+			.navbar-header
+				button.navbar-toggle.collapsed(type="button", data-toggle="collapse", data-target="#my-menu", aria-expanded="false")
+					span.sr-only Menu
+					span.icon-bar
+					span.icon-bar
+					span.icon-bar
+				a.navbar-brand(href="#")
+					img#logo(alt="Logo CreatiLab", src="img/logo-light.svg")
+
+			.collapse.navbar-collapse#my-menu
+				ul.nav.navbar-nav.navbar-right
+					li.active
+						a(href="#") Home
+					li
+						a(href="#") Full Slider
+					li
+						a(href="#") Parrallax
+					li
+						a(href="#") Parallax Section
+
+	// Carousel
+	#carrusel-img.carousel.slide.fade-carousel(data-ride="carousel")
+		// Indicadores
+		ol.carousel-indicators
+			li(data-target="#carrusel-img" data-slide-to="0").active
+			li(data-target="#carrusel-img" data-slide-to="1")
+			li(data-target="#carrusel-img" data-slide-to="2")
+			li(data-target="#carrusel-img" data-slide-to="3")
+			li(data-target="#carrusel-img" data-slide-to="4")
+			li(data-target="#carrusel-img" data-slide-to="5")
+		
+		// imagenes
+		.carousel-inner(role="listbox")
+			.item.active
+				.overlay
+				.fill(style="background-image:url('img/banner/banner-1.jpg');")
+					.hero
+						.carousel-caption
+							hgroup
+								h3 Carousel Custom  
+								p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis, sed.
+
+			.item
+				.overlay
+				.fill(style="background-image:url('img/banner/banner-2.jpg');")
+					.hero
+						.carousel-caption
+							hgroup
+								h3 Carousel Custom  
+								p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis, sed.
+			.item
+				.overlay
+				.fill(style="background-image:url('img/banner/banner-3.jpg');")
+					.hero
+						.carousel-caption
+							hgroup
+								h3 Carousel Custom  
+								p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis, sed.
+			.item
+				.overlay
+				.fill(style="background-image:url('img/banner/banner-4.jpg');")
+					.hero
+						.carousel-caption
+							hgroup
+								h3 Carousel Custom 
+								p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis, sed.
+			.item
+				.overlay
+				.fill(style="background-image:url('img/banner/banner-5.jpg');")
+					.hero
+						.carousel-caption
+							hgroup
+								h3 Carousel Custom  
+								p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis, sed.
+
+			.item
+				.overlay
+				.fill(style="background-image:url('img/banner/banner-6.jpg');")
+					.hero
+						.carousel-caption
+							hgroup
+								h3 Carousel Custom  
+								p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis, sed.
+			// Control
+			//- a.left.carousel-control(href="#carrusel-img", role="button", data-slide="prev")
+			//- 	span.glyphicon.glyphicon-chevron-left(aria-hidden="true")
+			//- 	span.sr-only Previous
+
+			//- a.right.carousel-control(href="#carrusel-img", role="button", data-slide="next")
+			//- 	span.glyphicon.glyphicon-chevron-right(aria-hidden="true")
+			//- 	span.sr-only Next
+
+	// About
+	.container.seccion
+		.row
+			.col-lg-12
+				h2.text-center.title Carousel Custom
+				hr.separator
+				p.text-center.paragramph  Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+					br
+					|Sit modi adipisci nam impedit, possimus. Voluptates velit laboriosam, fugit aut magnam.
+
+		// Footer
+	footer.footer
+		.container
+			p.text-center Copyleft 2017 | Desarrollo Free 
+				a(href="#", target="_blank") Yormi Altmiranda
+
+	script(src="js/all.min.js")
+	
