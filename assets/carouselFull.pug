@@ -31,6 +31,78 @@ body
 					li
 						a(href="#") Parallax Section
 
+	// Carousel
+	#carrusel-img.carousel.slide.fade-carousel(data-ride="carousel")
+		// Indicadores
+		ol.carousel-indicators
+			li(data-target="#carrusel-img" data-slide-to="0").active
+			li(data-target="#carrusel-img" data-slide-to="1")
+			li(data-target="#carrusel-img" data-slide-to="2")
+			li(data-target="#carrusel-img" data-slide-to="3")
+			li(data-target="#carrusel-img" data-slide-to="4")
+			li(data-target="#carrusel-img" data-slide-to="5")
+		
+		// imagenes
+		.carousel-inner(role="listbox")
+			.item.active
+				.overlay
+				.fill(style="background-image:url('img/banner/banner-1.jpg');")
+					.hero
+						.carousel-caption
+							hgroup
+								h3 Carousel Custom  
+								p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis, sed.
+
+			.item
+				.overlay
+				.fill(style="background-image:url('img/banner/banner-2.jpg');")
+					.hero
+						.carousel-caption
+							hgroup
+								h3 Carousel Custom  
+								p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis, sed.
+			.item
+				.overlay
+				.fill(style="background-image:url('img/banner/banner-3.jpg');")
+					.hero
+						.carousel-caption
+							hgroup
+								h3 Carousel Custom  
+								p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis, sed.
+			.item
+				.overlay
+				.fill(style="background-image:url('img/banner/banner-4.jpg');")
+					.hero
+						.carousel-caption
+							hgroup
+								h3 Carousel Custom 
+								p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis, sed.
+			.item
+				.overlay
+				.fill(style="background-image:url('img/banner/banner-5.jpg');")
+					.hero
+						.carousel-caption
+							hgroup
+								h3 Carousel Custom  
+								p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis, sed.
+
+			.item
+				.overlay
+				.fill(style="background-image:url('img/banner/banner-6.jpg');")
+					.hero
+						.carousel-caption
+							hgroup
+								h3 Carousel Custom  
+								p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis, sed.
+			// Control
+			//- a.left.carousel-control(href="#carrusel-img", role="button", data-slide="prev")
+			//- 	span.glyphicon.glyphicon-chevron-left(aria-hidden="true")
+			//- 	span.sr-only Previous
+
+			//- a.right.carousel-control(href="#carrusel-img", role="button", data-slide="next")
+			//- 	span.glyphicon.glyphicon-chevron-right(aria-hidden="true")
+			//- 	span.sr-only Next
+
 	// Footer
 	footer.footer
 		.container
