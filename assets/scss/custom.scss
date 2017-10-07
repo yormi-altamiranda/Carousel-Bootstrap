@@ -249,8 +249,8 @@ html,body{
     // NAVBAR
     .navbar-default {
       background-color: $primary;
-    padding-top:15px;
-    padding-bottom: 15px;
+      padding-top:15px;
+      padding-bottom: 15px;
       // height: 80px;
       border:0;
         .navbar-brand {
@@ -289,10 +289,9 @@ html,body{
                 transition: background .2s;
             }
         }
+      }
     }
 }
-
-
 @media screen and (max-width: 425px){
     .navbar-brand {
         padding: 5px;
@@ -325,47 +324,46 @@ html,body{
     }
 
     // Tutulos
-  .title {
+    .title {
       font-size: 2rem;
-  }
+    }
 
-  .sub-title {
+    .sub-title {
       font-size: 1.5rem;
 
-  }
+    }
 
-  .title-900{
-    font-family: $font__Roboto;
+    .title-900{
+      font-family: $font__Roboto;
       font-size: 3rem;
       font-weight: 900;
       margin-top: 3rem;
       margin-bottom: 2.5rem;
       text-transform: uppercase;
-  }
-  .paragramph {
+    }
+    .paragramph {
       font-size: 1.2rem;
-  }
-  // Parrallax
-  .text-vcenter {
+    }
+    // Parrallax
+    .text-vcenter {
 
-        h2 {
-          font-size: 2.5rem;
+          h2 {
+            font-size: 2.5rem;
 
-      }
+        }
+          p {
+            font-size: 1.1rem;
+        }
+    }
+    // Footer
+    .footer {
         p {
-          font-size: 1.1rem;
-      }
-  }
-  // Footer
-  .footer {
-      p {
-          font-size: .8rem
-      }
-      a {
-          font-weight: 700;
-          text-transform: uppercase;
-          margin-left: 5px;
-      }
-  }
-}
+            font-size: .8rem
+        }
+        a {
+            font-weight: 700;
+            text-transform: uppercase;
+            margin-left: 5px;
+        }
+    }
 }
